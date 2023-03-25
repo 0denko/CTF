@@ -8,7 +8,7 @@ Writeup:
 We are presented with files:
 - meta               # bytestream file that includes the labels for possible classifications
 - model.py           # machine learning model description in python
-- challenge.ipynb.   # notepad fyle including the foundation for the solution
+- challenge.ipynb.   # notepad file including the foundation for the solution
 - state_dict.pt      # trained model
 - test_X.zip         # archive with 8192 pictures
 
