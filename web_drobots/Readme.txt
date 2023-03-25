@@ -12,7 +12,11 @@ database.py file gives a clue saying that the code is vulnerable to SQL injectio
 This is the line of code:
     user = query_db(f'SELECT password FROM users WHERE username = "{username}" AND password = "{password}" ', one=True)
 
-We can try an injection: " OR 1=1 LIMIT 1 ;-- which will return any user bypassing a password verification
+We can try an injection:
+
+" OR 1=1 LIMIT 1 ;--
+
+It will return any user bypassing a password verification
 To make sure the request is sent to the server we need to enter something into a password field. Let's make it 1234
 
 This will result in a following querry sent to the database:
